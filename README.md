@@ -2,7 +2,7 @@
 
 # Resume Authoring
 
-Skill package version: `v0.3.0`. Resume content, Word files and PDF files retain their own approval states.
+Skill package version: `v0.3.1`. Resume content, Word files and PDF files retain their own approval states.
 
 This Skill guides evidence-based resume writing and revision across different candidates. It separates content-module confirmation, editable Word review, PDF acceptance, and versioned delivery. Each run reads only the current candidate's authorized materials in that candidate's private workspace; the package contains no candidate resume or personal template.
 
@@ -25,3 +25,9 @@ Invoke `$resume-authoring` when preparing or revising a resume. Provide the targ
 完整原文与完整修改稿保持可审阅，默认逐项目审批；用户明确免某轮复审时，记录授权并完成该范围的自主执行和验证，后续轮次按其对应授权处理。Word与PDF分别遵从用户的交付、审批约定，语言顺序沿用用户要求。
 
 内容源与格式基线分别登记；保留实际字体、字号、行距、段距、标题、加粗、链接及图标，逐段检查正文XML并在同一查看器中对照渲染。用户授权统一某一字号，不能扩展为整份简历的格式重设计。
+
+## 独立默认格式模板
+
+[`assets/default-format.json`](assets/default-format.json)单独保存默认页面、字体、字号、行距、段距、标题层级、原生加粗／链接及日期右对齐规则。使用优先级：本轮用户明确要求→用户模板或已确认格式→默认模板。先解析实际继承属性，防止姓名继承正文固定行高；日期按有效文字区统一右制表位，禁止空格凑齐。已有文件仅修复获准属性。
+
+[`check_resume_layout.py`](skills/resume-project-review/scripts/check_resume_layout.py)检查有效固定行高与日期制表位，结果仍需全页渲染和对应查看器核验。

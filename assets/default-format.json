@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "profile": "default-compact-resume",
+  "precedence": [
+    "current_explicit_user_requirements",
+    "user_template_or_selected_accepted_format",
+    "default_profile"
+  ],
+  "purpose": "Fallback formatting for a compact resume; adopt only when a higher-priority source does not specify a property. Record the resolved role styles privately before building.",
+  "page": {
+    "size": "A4",
+    "orientation": "portrait",
+    "margins_pt": {
+      "top": 42.5,
+      "bottom": 35.5,
+      "left": 39.65,
+      "right": 36.85
+    }
+  },
+  "fonts": {
+    "latin": "Times New Roman",
+    "cjk": "Songti SC",
+    "verify_available_on_renderer_and_target_viewer": true
+  },
+  "roles": {
+    "name": {
+      "size_pt": 16,
+      "bold": true,
+      "line_spacing": {
+        "rule": "auto",
+        "multiple": 1.04
+      },
+      "space_after_pt": 2
+    },
+    "english_name": {
+      "size_pt": 9.5,
+      "bold": true
+    },
+    "role_headline": {
+      "size_pt": 12,
+      "bold": true,
+      "line_spacing": {
+        "rule": "auto",
+        "multiple": 1.04
+      }
+    },
+    "section_heading": {
+      "size_pt": 12,
+      "bold": true,
+      "space_before_pt": 8,
+      "space_after_pt": 3,
+      "keep_with_next": true,
+      "line_spacing": {
+        "rule": "auto",
+        "multiple": 1.04
+      }
+    },
+    "institution_company": {
+      "size_pt": 9.5,
+      "bold": true,
+      "space_before_pt": 5,
+      "space_after_pt": 2,
+      "line_spacing": {
+        "rule": "auto",
+        "multiple": 1.04
+      },
+      "alignment": "left",
+      "shading": "EFF3F8",
+      "keep_with_next": true
+    },
+    "project_heading": {
+      "size_pt": 9.5,
+      "bold": true,
+      "space_before_pt": 5,
+      "space_after_pt": 2,
+      "keep_with_next": true,
+      "line_spacing": {
+        "rule": "auto",
+        "multiple": 1.04
+      }
+    },
+    "body": {
+      "size_pt": 8.5,
+      "space_after_pt": 1,
+      "line_spacing": {
+        "rule": "auto",
+        "multiple": 1.04
+      },
+      "alignment": "left"
+    },
+    "date": {
+      "size_pt": 8.5,
+      "bold": false,
+      "alignment": "right_tab",
+      "tab_position": "effective_text_right_edge",
+      "trim_trailing_alignment_spaces": true
+    }
+  },
+  "emphasis": {
+    "native_word_bold": true,
+    "selection": "ownership, consequential choices, evidence; avoid whole-paragraph bold"
+  },
+  "links": {
+    "native_hyperlink": true,
+    "display": "actual_domain_or_user_selected_label"
+  },
+  "images": {
+    "preserve_user_assets": true,
+    "include_without_asset": false,
+    "reserve_photo_area_in_header": true
+  },
+  "quality": {
+    "resolve_inherited_paragraph_and_run_properties": true,
+    "fixed_line_height_must_not_clip_larger_runs": true,
+    "dates_share_right_edge_by_role": true,
+    "never_align_dates_by_space_padding": true,
+    "render_all_pages": true,
+    "check_reported_viewer_when_available": true,
+    "do_not_shrink_text_to_meet_page_count": true
+  },
+  "locale_spacing": "Follow the users explicit Chinese-Latin/numeric spacing preference; preserve English phrase spaces."
+}

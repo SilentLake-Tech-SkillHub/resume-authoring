@@ -15,6 +15,12 @@ Help one person produce a credible, readable resume without transferring another
 
 Read [intake and evidence](references/intake-and-evidence.md) before drafting claims. Read [writing and layout](references/writing-and-layout.md) when choosing structure or revising prose. Before shortening or selection, identify and inspect the exact format baseline separately from the content source; preserve its actual paragraph/run formatting except for specifically authorized changes. Read [approval and versions](references/approval-and-versions.md) before creating files, advancing a review state, or delivering.
 
+## Resolve the format separately from content
+
+Read [default-format.json](assets/default-format.json) when selecting or auditing formatting. It is a standalone fallback format, not authority to replace a user template. Resolve precedence per property: current explicit user requirements → user-provided template or selected accepted format → defaults. Inspect a supplied Word/PDF visually and in its actual paragraph/run properties, record the resolved role styles privately, and apply only authorized changes. Keep all user materials outside this package.
+
+For reported clipping or date alignment, read [Chinese document quality](skills/resume-project-review/references/chinese-quality.md) and run its layout checker before and after repair; inherited styles can override an apparently empty paragraph setting. Keep larger headings clear of fixed body line heights and use a shared effective right edge for date rows.
+
 ## Long resume, compressed resume, and target-length short resume
 
 Within each requested language, default to **long resume → content-preserving compressed resume → target-length short resume when needed**, unless the person explicitly chooses another order. Review the complete long source first and record its accepted version. Read [resume-compression](skills/resume-compression/SKILL.md) for sentence-level shortening, keyword preservation, compression stages, or a request to fit a page target.

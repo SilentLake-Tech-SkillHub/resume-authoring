@@ -35,3 +35,9 @@ When the person reports different sizes for education and work, inspect effectiv
 ## Recovery and shipping
 
 Keep earlier files as recovery baselines and create a new candidate for an actual document change. Compare approved claims and numeric values after any repair. Internal rendering PDFs/images stay QA evidence; only the requested deliverable is returned. Word approval precedes delivery PDF export, and PDF approval remains separate. User-reported defects reopen the affected file gate; a checker pass never substitutes for user acceptance.
+
+## Clipping and date alignment
+
+Run `scripts/check_resume_layout.py --docx <file> --output <private-report.json>` from this child Skill for a reported clipped name/title or inconsistent date alignment. It checks inherited fixed paragraph line height against effective run size and date tabs against the section text edge and paragraph right indent. It is a preflight, not proof of visible glyph bounds; inspect all rendered pages and the reported Word/WPS surface when available. If that viewer is unavailable, record the failure and keep file acceptance pending.
+
+Fix large text by overriding its paragraph with automatic or adequate minimum line height; do not shrink the name or replace the whole document style. Unify date-row right tabs using effective width, preserve date run formatting, remove only trailing alignment spaces and check each long institution/company label. Read back the unchanged wording and unaffected properties. The default values live in the parent `assets/default-format.json`; user templates and explicit changes override them per property.
