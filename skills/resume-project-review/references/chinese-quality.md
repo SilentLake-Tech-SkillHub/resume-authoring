@@ -18,6 +18,16 @@ Distinguish corrupted characters from missing glyphs, unsupported/substituted fo
 6. Extract rendered PDF text and rerun with `--rendered-text <extracted text>`. Every Word paragraph, including hyperlink display text, must survive extraction. Inspect reported misses rather than silently ignoring them. Page counters or line-break variants can require a documented comparison adjustment.
 7. If the defect occurs in native Word/WPS or an in-app preview, verify the corrected exact file in that reported surface. Inspect screenshot evidence after opening it. If the report concerns an early renderer screenshot and the final render already resolves it, record that distinction and recheck the final render. Do not rewrite approved content to fix a font failure.
 
+## User-requested Chinese spacing
+
+Honor the person's explicit Chinese/Latin/numeric spacing preference. When the person requests no extra spaces, remove actual spaces at those boundaries across the whole paragraph, including boundaries between runs and hyperlink display text; preserve native emphasis, English phrase word boundaries, identifiers and hyperlink targets. Do not assign whole-paragraph text and destroy its runs.
+
+Also disable Word's automatic Chinese–Latin and Chinese–numeric spacing: set `w:autoSpaceDE` and `w:autoSpaceDN` to `w:val="0"` on affected paragraph properties and inherited style defaults. Removing literal spaces alone does not remove the viewer's generated visual spacing. Do not mistake glyph side bearings for literal spaces or alter the approved font to hide them.
+
+Use `scripts/normalize_cjk_spacing.py --input <source.docx> --output <new-candidate.docx>` from the document runtime when this preference is active. It preserves run formatting and URLs, edits boundaries across runs, disables paragraph/style automatic spacing, and refuses to overwrite an existing file. Run the checker with `--no-cjk-latin-spaces` when this preference is active; this checks both actual boundary spaces and explicit disabled automatic spacing. Compare every paragraph before/after with whitespace ignored, verify unchanged links/formatting, and rerender all pages. Keep the person's spacing preference in private run configuration; the reusable option supports other people's choices without imposing this preference universally.
+
+Specification references: [Chinese–Latin spacing](https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.wordprocessing.autospacede?view=openxml-3.0.1), [Chinese–numeric spacing](https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.wordprocessing.autospacedn?view=openxml-3.0.1).
+
 ## Recovery and shipping
 
 Keep earlier files as recovery baselines and create a new candidate for an actual document change. Compare approved claims and numeric values after any repair. Internal rendering PDFs/images stay QA evidence; only the requested deliverable is returned. Word approval precedes delivery PDF export, and PDF approval remains separate. User-reported defects reopen the affected file gate; a checker pass never substitutes for user acceptance.

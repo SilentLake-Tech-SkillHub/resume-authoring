@@ -9,7 +9,9 @@ W='{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
 R='{http://schemas.openxmlformats.org/package/2006/relationships}'
 def norm(text):
     return re.sub(r'\s+','',text).replace('\u00ad','')
-def check(docx,approved=None,rendered=None):
+CJK_LATIN_SPACES=re.compile(r'(?<=[\u3400-\u9fff，。；：！？、（）《》「」])[ \u00a0]+(?=[A-Za-z0-9])|(?<=[A-Za-z0-9%])[ \u00a0]+(?=[\u3400-\u9fff，。；：！？、（）《》「」])')
+
+def check(docx,approved=None,rendered=None,no_cjk_latin_spaces=False):
     errors=[];warnings=[];fonts=Counter()
     with zipfile.ZipFile(docx) as z:
         bad=z.testzip()
@@ -26,6 +28,14 @@ def check(docx,approved=None,rendered=None):
             rel=ET.fromstring(z.read('word/_rels/document.xml.rels').decode('utf-8',errors='strict'))
             targets=[x.get('Target') for x in rel if x.get('Type','').endswith('/hyperlink')]
     for i,text in enumerate(paragraphs):
+        if no_cjk_latin_spaces:
+            if CJK_LATIN_SPACES.search(text):errors.append({'kind':'cjk_latin_boundary_space','paragraph':i})
+            if re.search(r'[\u3400-\u9fff]',text):
+                props=list(doc.iter(W+'p'))[i].find(W+'pPr')
+                for setting in ['autoSpaceDE','autoSpaceDN']:
+                    item=props.find(W+setting) if props is not None else None
+                    if item is None or item.get(W+'val') not in ['0','false','off']:
+                        errors.append({'kind':'automatic_cjk_spacing_not_disabled','paragraph':i,'setting':setting})
         if '\ufffd' in text or re.search(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]',text):
             errors.append({'kind':'damaged_character','paragraph':i})
         if '**' in text or re.search(r'\[[^\]]+\]\(https?://',text):
@@ -44,8 +54,8 @@ def check(docx,approved=None,rendered=None):
     return {'passed':not errors,'paragraphs':len(paragraphs),'errors':errors,'warnings':warnings,'east_asia_fonts':dict(fonts),'hyperlink_targets':targets,'visual_review_required':True}
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--docx',required=True,type=Path);p.add_argument('--approved-text',type=Path);p.add_argument('--rendered-text',type=Path);p.add_argument('--output',type=Path);a=p.parse_args()
-    try:result=check(a.docx,a.approved_text,a.rendered_text)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--docx',required=True,type=Path);p.add_argument('--approved-text',type=Path);p.add_argument('--rendered-text',type=Path);p.add_argument('--output',type=Path);p.add_argument('--no-cjk-latin-spaces',action='store_true');a=p.parse_args()
+    try:result=check(a.docx,a.approved_text,a.rendered_text,a.no_cjk_latin_spaces)
     except (OSError,UnicodeError,zipfile.BadZipFile,ET.ParseError,KeyError) as e:
         result={'passed':False,'errors':[{'kind':'unreadable_document','detail':str(e)}]}
     data=json.dumps(result,ensure_ascii=False,indent=2)

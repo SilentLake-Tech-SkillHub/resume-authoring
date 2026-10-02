@@ -37,7 +37,7 @@ Delete repeated setup, filler and over-detailed examples; retain the pain point,
 - Do not invent awards, expand their level or transfer claims from a reference. Keep historical data and current data distinct based on the actual evidence. Ask only about missing facts that change the claim; do not introduce defensive hypothetical gaps after the person has supplied the facts.
 - Keep planned work under a clear roadmap label when included. Avoid defensive prose such as “以上尚未作为已上线能力交付” in the resume. Remove self-use/recruiting statements or duplicated skill blocks when the person rejects them.
 - User review order controls language progression. If Chinese must finish first, complete its authorized review/delivery stages before drafting English. Carry corrected shared facts to English when its stage starts, without treating it as a literal line-by-line translation or an approved pair.
-- Show actual website domains as link display text when requested. Convert Markdown emphasis and links into native Word formatting; never paste the syntax into plain Word text.
+- Show actual website domains as link display text when requested. Honor the person’s Chinese/Latin/numeric spacing preference across all paragraphs and run boundaries, including Word automatic spacing. Convert Markdown emphasis and links into native Word formatting; never paste the syntax into plain Word text.
 
 ## File quality and completion
 
