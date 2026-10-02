@@ -28,6 +28,10 @@ Use `scripts/normalize_cjk_spacing.py --input <source.docx> --output <new-candid
 
 Specification references: [Chinese–Latin spacing](https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.wordprocessing.autospacede?view=openxml-3.0.1), [Chinese–numeric spacing](https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.wordprocessing.autospacedn?view=openxml-3.0.1).
 
+## Consistent typography by role
+
+When the person reports different sizes for education and work, inspect effective run/style sizes in both instead of diagnosing from apparent screenshot scale. Use the person's selected section as the private baseline and align equivalent body, institution/company and date roles; preserve name and section-heading hierarchy. Inspect project headings with the same hierarchy. Record actual before/after sizes privately and verify that text, bold, links, images and non-size formatting survive. Do not impose a particular person's point sizes on other resumes. Produce a separate repair candidate and review all rendered pages.
+
 ## Recovery and shipping
 
 Keep earlier files as recovery baselines and create a new candidate for an actual document change. Compare approved claims and numeric values after any repair. Internal rendering PDFs/images stay QA evidence; only the requested deliverable is returned. Word approval precedes delivery PDF export, and PDF approval remains separate. User-reported defects reopen the affected file gate; a checker pass never substitutes for user acceptance.

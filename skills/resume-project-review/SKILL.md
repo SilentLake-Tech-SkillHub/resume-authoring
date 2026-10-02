@@ -31,6 +31,10 @@ Explain the actual user/business problem, the person's ownership, the product de
 
 Review and approve the complete long resume before deriving a role-specific short resume, following the parent Skill's length order. In short review, identify the exact accepted long source, show complete proposed wording and the omitted/merged material, then obtain the person's approval before applying it. Preserve the long source and the factual relationships behind each retained claim. Use the same complete comparison format; do not treat earlier long approval as approval of the short selection.
 
+## Sentence-preserving short review
+
+When the person requires every long sentence to be shortened without losing keywords, use that requested mode instead of selecting away sentences or projects. Map every source sentence to a shorter counterpart. Preserve its product pain point, contribution, key technical terms, data route, selection rationale, numbers and the relationships among them; remove redundant phrasing. The complete long and short project remain the review surface, with a private sentence/keyword coverage ledger as evidence. Do not turn causal explanations into a keyword list. Keep one whole project per approval and apply its short text to files only after the required content approvals and explicit file authorization.
+
 ## Compress without stripping the project
 
 Delete repeated setup, filler and over-detailed examples; retain the pain point, contribution, key product choices, algorithm/framework names, data chain, selection rationale and important results. Shorten procedural narration by naming its central mechanism. Do not cut a multi-part platform to a few generic bullets just to fit a page target. If a material deletion is needed, show its exact scope for approval. Layout tuning does not authorize content deletion or unreadably small type.

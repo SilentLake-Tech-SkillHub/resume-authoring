@@ -2,7 +2,7 @@
 
 # Resume Authoring
 
-Skill package version: `v0.2.2`. Resume content, Word files and PDF files retain their own approval states.
+Skill package version: `v0.2.3`. Resume content, Word files and PDF files retain their own approval states.
 
 This Skill guides evidence-based resume writing and revision across different candidates. It separates content-module confirmation, editable Word review, PDF acceptance, and versioned delivery. Each run reads only the current candidate's authorized materials in that candidate's private workspace; the package contains no candidate resume or personal template.
 
@@ -17,3 +17,5 @@ Invoke `$resume-authoring` when preparing or revising a resume. Provide the targ
 中文排版按用户明确偏好处理；无额外间距时同时检查实际空格及Word自动中西文间距，使用`--no-cjk-latin-spaces`选项。
 
 默认制作顺序：长版完整事实与项目审核→长版Word验收→按目标岗位派生短版并审核删减范围→短版Word验收；长短版PDF各自从获批Word导出并独立验收，语言顺序遵从用户。
+
+支持用户指定逐句压缩并保留关键词的短版模式；长短完整对照、单项目审批，按用户选定基准统一同层级字号。
