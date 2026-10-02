@@ -15,10 +15,16 @@ Help one person produce a credible, readable resume without transferring another
 
 Read [intake and evidence](references/intake-and-evidence.md) before drafting claims. Read [writing and layout](references/writing-and-layout.md) when choosing structure or revising prose. Read [approval and versions](references/approval-and-versions.md) before creating files, advancing a review state, or delivering.
 
+## Detailed project review and feedback
+
+For project-by-project revision, preserve-and-compress requests, complete original/proposed comparisons, or repeated feedback, load the independent child Skill [resume-project-review](skills/resume-project-review/SKILL.md). Its review unit is one whole project; honor a user-requested batch for school projects or a requested consolidation of one role. Apply accepted feedback across the affected resume and current candidate.
+
+For Chinese Word/PDF creation or reports of garbled Chinese, load [Chinese document quality](skills/resume-project-review/references/chinese-quality.md) before showing screenshots or delivering files. Run the child Skill's text checker alongside full-page rendering; passing a text check does not establish visual quality.
+
 ## Work through the review gates
 
 - Build a private fact ledger. Mark the source and certainty of each claim, the person's contribution, dates, metric definitions, and whether work is launched, in progress, or planned. Ask about conflicts that would change the resume; never fill them with plausible-sounding facts.
-- Draft one module at a time, such as education, work, projects, or skills. Show the facts used, key inclusion/exclusion decisions, and proposed wording. Incorporate feedback and obtain an explicit approval for that module before proceeding. A request for a whole resume does not silently waive module review.
+- Draft one whole project at a time when the user requests project review; otherwise use the agreed module order, such as education, work, projects, or skills. Show the facts used, key inclusion/exclusion decisions, and proposed wording. Incorporate feedback and obtain an explicit approval for that module before proceeding. A request for a whole resume does not silently waive module review.
 - After all required modules are approved, produce a separate editable Word candidate. Render every page, inspect text and visual layout, and request approval of that exact file. Revisions retain candidate identity and invalidate affected approvals.
 - Only after Word approval, export the corresponding PDF. Check its full text and every page, including fonts, icons, pagination, and file visibility; ask for separate PDF approval. Delivery is complete only after both requested formats pass their user gates. If the person explicitly changes the deliverable to one format, record that scope change rather than pretending both were accepted.
 - Keep languages distinct: verify shared facts across versions, but do not assume two languages are paragraph-for-paragraph translations or approved as a pair unless the person names the exact pair.
