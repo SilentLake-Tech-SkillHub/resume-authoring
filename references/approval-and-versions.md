@@ -28,3 +28,7 @@ Filenames should identify the person, language, purpose, content version, and da
 - Word: editable content, full text and factual comparison to approved modules, every-page render, usable fonts/icons, page count and balance, visible file in the user's file manager, and actual-user approval of the exact candidate.
 - PDF: exported from that approved Word, searchable/copyable text, every-page visual review, expected page count, stable fonts/icons and pagination, visible/openable file, and separate actual-user approval.
 - Delivery report: list the exact approved files, versions and source candidate, what was validated, what remains unverified in the user's native viewer, and what was not authorized (such as submission or publication).
+
+## Long and short identities
+
+Track language, purpose (long or short), source content version and format approval separately. The accepted long Word is the factual and editorial source for a short candidate. Name the long version explicitly when registering acceptance; a short version records which accepted long source it derives from and which selections the person approved. Do not rename an older short or another language to make it appear updated, and do not infer PDF approval from Word approval.

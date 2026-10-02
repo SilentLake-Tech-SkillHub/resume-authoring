@@ -27,6 +27,10 @@ Explain the actual user/business problem, the person's ownership, the product de
 - **Interface and results:** how the user sees facts, comparisons, charts, sources and subsequent changes; describe the consequential design rather than listing generic UI conveniences.
 - **Outcomes:** verified scope, launch dates and improvements. Preserve important metrics, their definitions, baselines and periods. User corrections override rejected values across every affected passage.
 
+## Long source and short derivation
+
+Review and approve the complete long resume before deriving a role-specific short resume, following the parent Skill's length order. In short review, identify the exact accepted long source, show complete proposed wording and the omitted/merged material, then obtain the person's approval before applying it. Preserve the long source and the factual relationships behind each retained claim. Use the same complete comparison format; do not treat earlier long approval as approval of the short selection.
+
 ## Compress without stripping the project
 
 Delete repeated setup, filler and over-detailed examples; retain the pain point, contribution, key product choices, algorithm/framework names, data chain, selection rationale and important results. Shorten procedural narration by naming its central mechanism. Do not cut a multi-part platform to a few generic bullets just to fit a page target. If a material deletion is needed, show its exact scope for approval. Layout tuning does not authorize content deletion or unreadably small type.

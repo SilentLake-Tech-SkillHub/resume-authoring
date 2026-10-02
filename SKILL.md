@@ -15,6 +15,14 @@ Help one person produce a credible, readable resume without transferring another
 
 Read [intake and evidence](references/intake-and-evidence.md) before drafting claims. Read [writing and layout](references/writing-and-layout.md) when choosing structure or revising prose. Read [approval and versions](references/approval-and-versions.md) before creating files, advancing a review state, or delivering.
 
+## Long resume before short resume
+
+Within each requested language, default to **long resume → user approval → role-specific short resume**, unless the person explicitly chooses another order. The long resume is the complete reviewed source: retain the substantive projects, product/technical decisions and supported outcomes, then obtain approval of its exact Word file. Record that accepted long version as the source for subsequent short versions.
+
+Build a short resume by selecting and compressing from that accepted long source for the agreed role and length. Show complete proposed short wording with the actual omitted or merged passages for approval; retain each selected project's problem, ownership, consequential design choices and outcomes. Keep the long source intact. A page target does not authorize cutting unreviewed content. Give long and short versions distinct purpose labels and independent Word/PDF approvals, linked to the same source content version. Approval of one does not approve the other.
+
+After long Word approval, short-content review may begin while the long PDF awaits its separate review; export each PDF only from its corresponding approved Word. Honor the person's language order independently of length order.
+
 ## Detailed project review and feedback
 
 For project-by-project revision, preserve-and-compress requests, complete original/proposed comparisons, or repeated feedback, load the independent child Skill [resume-project-review](skills/resume-project-review/SKILL.md). Its review unit is one whole project; honor a user-requested batch for school projects or a requested consolidation of one role. Apply accepted feedback across the affected resume and current candidate.
