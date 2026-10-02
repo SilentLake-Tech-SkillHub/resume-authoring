@@ -2,7 +2,7 @@
 
 # Resume Authoring
 
-Skill package version: `v0.2.3`. Resume content, Word files and PDF files retain their own approval states.
+Skill package version: `v0.3.0`. Resume content, Word files and PDF files retain their own approval states.
 
 This Skill guides evidence-based resume writing and revision across different candidates. It separates content-module confirmation, editable Word review, PDF acceptance, and versioned delivery. Each run reads only the current candidate's authorized materials in that candidate's private workspace; the package contains no candidate resume or personal template.
 
@@ -16,6 +16,12 @@ Invoke `$resume-authoring` when preparing or revising a resume. Provide the targ
 
 中文排版按用户明确偏好处理；无额外间距时同时检查实际空格及Word自动中西文间距，使用`--no-cjk-latin-spaces`选项。
 
-默认制作顺序：长版完整事实与项目审核→长版Word验收→按目标岗位派生短版并审核删减范围→短版Word验收；长短版PDF各自从获批Word导出并独立验收，语言顺序遵从用户。
+## 子Skill：简历压缩与篇幅路由
 
-支持用户指定逐句压缩并保留关键词的短版模式；长短完整对照、单项目审批，按用户选定基准统一同层级字号。
+[`resume-compression`](skills/resume-compression/SKILL.md)承接逐项目逐句压缩、并列信息合并、关键词与事实关系保留、格式保留和实际页数检查。压缩阶段保留全部实质内容；按页数删减阶段另记完整删减范围与理由。
+
+默认顺序：长版完整审核→压缩版→按需删减的目标页数短版。首次确认精确页数、页数上限或无固定页数；压缩版满足篇幅要求即可直接交付，超过目标则继续独立的内容取舍阶段。已确认篇幅要求写入调用者私有配置并复用，通用Skill不写死某位用户的页数。
+
+完整原文与完整修改稿保持可审阅，默认逐项目审批；用户明确免某轮复审时，记录授权并完成该范围的自主执行和验证，后续轮次按其对应授权处理。Word与PDF分别遵从用户的交付、审批约定，语言顺序沿用用户要求。
+
+内容源与格式基线分别登记；保留实际字体、字号、行距、段距、标题、加粗、链接及图标，逐段检查正文XML并在同一查看器中对照渲染。用户授权统一某一字号，不能扩展为整份简历的格式重设计。

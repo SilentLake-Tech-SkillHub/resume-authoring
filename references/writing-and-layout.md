@@ -4,7 +4,7 @@ Read this when selecting an information hierarchy, drafting bullets, revising to
 
 ## Start with the reader's scan
 
-Place role-relevant, evidenced strengths where the intended reader can find them quickly. Use institution/company rows, dates, project titles, and restrained emphasis to separate contexts. A logo or icon may help identify an organization only when its source and use are supportable; if not, omit it. Color and font size can reinforce a true priority, but must not fabricate one or make other experience unreadable. Treat a requested page count as a target, not permission to invent, pad, or shrink text: if the supported content does not fit that length credibly, show the tradeoff and ask the person to choose.
+Place role-relevant, evidenced strengths where the intended reader can find them quickly. Use institution/company rows, dates, project titles, and restrained emphasis to separate contexts. A logo or icon may help identify an organization only when its source and use are supportable; if not, omit it. Color and font size can reinforce a true priority, but must not fabricate one or make other experience unreadable. Capture whether the requested page count is exact, a maximum, or unconstrained at intake. Use content-preserving compression first and role-based selection when still needed, following [resume-compression](../skills/resume-compression/SKILL.md). Keep type readable and follow the agreed deletion/review authority to reach the actual page target.
 
 If the person has an accepted version, inspect its actual Word and PDF, note page size/count, hierarchy, visual weight, language, content selection, and fonts on the target viewing system. Preserve recognizable continuity unless the new role, facts, or user feedback justify change. Explain meaningful deviations; do not demand identical wording or assume different language versions are aligned line by line.
 
@@ -19,3 +19,9 @@ Make AI-related work visible only if its actual work, responsibility, and outcom
 ## Visual QA
 
 Inspect every page of the actual Word render and exported PDF. Check company rows, date alignment, title hierarchy, icon scale/source, line breaks, font substitution, page balance, clipping, and text searchability. A near-empty final page or tiny body text is a reason to revise the layout rather than imitate a supplied reference. Automated rendering cannot replace the person's view in their Word/WPS and PDF reader.
+
+## Preserve the actual format baseline
+
+Identify the exact accepted or explicitly chosen style reference separately from the content source. Record page size/margins, font families, body/date/title sizes, line-spacing rule and value, before/after paragraph spacing, indents, tabs/alignment, heading colors/shading, bold hierarchy, icons/photo anchors and header/footer behavior. Wording compression changes text; it does not authorize a redesign. A request to unify one font size permits that change, not a replacement of line spacing, paragraph spacing, title styles or emphasis across the document.
+
+Compare the actual paragraph and run properties for mapped source/output paragraphs, including properties stored inside `word/document.xml`. Checking only `styles.xml`, package assets and page margins misses substantial visual changes. Preserve meaningful native emphasis through text replacement and review its positions in the rewritten text; do not rebuild bold indiscriminately from keyword lists. Read back the formatting changes against the authorized list and inspect representative matching sections in the same renderer/viewer, then inspect every final page. Pagination caused by shorter content is expected, but it does not justify unrelated formatting drift.

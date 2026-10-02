@@ -9,7 +9,7 @@ For a new user without a layout standard, propose five shallow zones: source mat
 ## Review states
 
 1. `facts_open`: target and sources known; claims are being checked.
-2. `modules_in_review`: each required module has its own approved/revise/defer status. No Word candidate until all required modules are approved.
+2. `modules_in_review`: each required module has its own approved/revise/defer status. A Word candidate follows the required approvals or an explicit in-scope review waiver, recorded with its source and round.
 3. `word_candidate`: editable, versioned file built from the approved modules; render and inspect every page.
 4. `word_approved_pdf_pending`: the person approves the exact Word candidate. Assign a new formal **content version** and record which candidate produced it; do not yet call the pair delivered.
 5. `pdf_candidate`: export from that approved Word. Verify text, page count, visuals, fonts/icons, and ability to find/open the file.
@@ -19,7 +19,7 @@ Changing facts or an approved module reopens that module and affected Word/PDF a
 
 ## Version and naming contract
 
-Keep candidate and formal content versions distinguishable. One possible pattern is `v1.2.0-candidate.3` for a working copy and `v1.2.0` for the approved content version; use an existing project convention when present. The candidate-to-formal promotion records source file, date, approving user, scope/language, and checks. The PDF inherits the content version but retains its own pending/approved status. Never overwrite an older accepted version to make a new one appear current.
+Keep candidate and formal content versions distinguishable. If the user explicitly authorizes delivery without another review, record `authorized_delivery` and the precise waiver rather than inventing file acceptance. One possible pattern is `v1.2.0-candidate.3` for a working copy and `v1.2.0` for the approved content version; use an existing project convention when present. The candidate-to-formal promotion records source file, date, approving user, scope/language, and checks. The PDF inherits the content version but retains its own pending/approved status. Never overwrite an older accepted version to make a new one appear current.
 
 Filenames should identify the person, language, purpose, content version, and date in the **person's private workspace**. Do not carry filenames or identity data into reusable Skill resources. Keep each language's approval independent and identify an accepted bilingual pair explicitly when needed.
 
@@ -29,6 +29,8 @@ Filenames should identify the person, language, purpose, content version, and da
 - PDF: exported from that approved Word, searchable/copyable text, every-page visual review, expected page count, stable fonts/icons and pagination, visible/openable file, and separate actual-user approval.
 - Delivery report: list the exact approved files, versions and source candidate, what was validated, what remains unverified in the user's native viewer, and what was not authorized (such as submission or publication).
 
-## Long and short identities
+## Length-stage and format identities
 
-Track language, purpose (long or short), source content version and format approval separately. The accepted long Word is the factual and editorial source for a short candidate. Name the long version explicitly when registering acceptance; a short version records which accepted long source it derives from and which selections the person approved. Do not rename an older short or another language to make it appear updated, and do not infer PDF approval from Word approval.
+Record `long`, `compressed`, or `target_length_short` as separate purposes; keep language, source version, target pages, actual rendered pages, format baseline and review authority alongside the format approval. The long Word is the complete factual/editorial source. The compressed version retains its substantive content in shorter wording. If compression satisfies the person's agreed page requirement, it can be delivered directly; otherwise the short version records subsequent selection and deletion decisions. Read [resume-compression](../skills/resume-compression/SKILL.md) for routing and evidence.
+
+Keep earlier filenames and bytes intact when correcting a purpose label; append a superseding registration rather than silently renaming an accepted file or changing its history. Do not rename another language or an older short version to imply it was updated. The format baseline can differ from the content source when explicitly selected: record the exact file and permitted format changes. Review waivers apply only to their stated steps and round, with authority recorded separately from actual acceptance.

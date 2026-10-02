@@ -1,6 +1,6 @@
 ---
 name: resume-project-review
-description: Revise resume projects through complete original/proposed comparisons, explicit project approval, content-preserving compression, and feedback propagation. Use within resume-authoring for detailed project review, not general copy editing.
+description: Revise resume projects through complete original/proposed comparisons, project review, deletion-scope approval, and feedback propagation. Use within resume-authoring for detailed project review, not general copy editing.
 ---
 
 # Resume project review
@@ -12,8 +12,8 @@ Read the person's current approved sources, previous review decisions, correctio
 1. Identify the actual project and its boundary. Resolve alternative names for the same project using the person's sources and corrections. Do not split the same project into invented entries. Review one whole project at a time unless the person explicitly requests a batch. Consolidate a work role only when requested; keep other projects independently reviewable.
 2. Present **发现的问题—完整原句** followed by **建议修改—完整内容**. Include the complete relevant project in both, including its title, dates, website and every paragraph. Explain each material problem using the actual wording. Never substitute fragments, ellipses or an abbreviated summary for either version.
 3. Use readable rendered paragraphs, selective bold and real links in the chat. Avoid wide code blocks, horizontally scrolling tables, tiny screenshots or screenshots as the only review surface. A request to remove literal stars from Word means convert emphasis to real formatting, while retaining the requested hierarchy.
-4. Incorporate feedback and show the complete revised project again. “可以”“确认”“下一个” approves the immediately reviewed version only when that reference is clear. Keep the exact approved wording in the ledger. Wait for approval of that project before reviewing the next. Drafting approval does not authorize an unreviewed rewrite or early file mutation.
-5. During wording review, keep resume files unchanged until the user authorizes applying approved content. When all required projects are approved, build a separate Word candidate from those exact versions. Match every approved paragraph and corrected fact to the saved file. Follow the parent's separate Word/PDF file-review gates.
+4. Incorporate feedback and show the complete revised project again. “可以”“确认”“下一个” approves the immediately reviewed version only when that reference is clear. Keep the exact approved wording in the ledger. Wait for the required approval before the next project, or follow an explicit waiver for the named round and scope. Drafting approval does not authorize an unreviewed rewrite or early file mutation.
+5. During wording review, keep resume files unchanged until the user authorizes applying approved content. When all required projects are approved or explicitly covered by a review waiver, build a separate Word candidate from those exact versions. Match every approved paragraph and corrected fact to the saved file. Follow the parent's separate Word/PDF file-review gates.
 
 ## Write decisions the interviewer can assess
 
@@ -27,17 +27,11 @@ Explain the actual user/business problem, the person's ownership, the product de
 - **Interface and results:** how the user sees facts, comparisons, charts, sources and subsequent changes; describe the consequential design rather than listing generic UI conveniences.
 - **Outcomes:** verified scope, launch dates and improvements. Preserve important metrics, their definitions, baselines and periods. User corrections override rejected values across every affected passage.
 
-## Long source and short derivation
+## Compression and target-length selection
 
-Review and approve the complete long resume before deriving a role-specific short resume, following the parent Skill's length order. In short review, identify the exact accepted long source, show complete proposed wording and the omitted/merged material, then obtain the person's approval before applying it. Preserve the long source and the factual relationships behind each retained claim. Use the same complete comparison format; do not treat earlier long approval as approval of the short selection.
+Load [resume-compression](../resume-compression/SKILL.md) for wording compression, sentence/keyword coverage and stage routing. The compressed resume preserves the substantive content; a target-length short resume may then select, merge or delete content for the agreed role and page limit. Keep these operations and their private ledgers distinct.
 
-## Sentence-preserving short review
-
-When the person requires every long sentence to be shortened without losing keywords, use that requested mode instead of selecting away sentences or projects. Map every source sentence to a shorter counterpart. Preserve its product pain point, contribution, key technical terms, data route, selection rationale, numbers and the relationships among them; remove redundant phrasing. The complete long and short project remain the review surface, with a private sentence/keyword coverage ledger as evidence. Do not turn causal explanations into a keyword list. Keep one whole project per approval and apply its short text to files only after the required content approvals and explicit file authorization.
-
-## Compress without stripping the project
-
-Delete repeated setup, filler and over-detailed examples; retain the pain point, contribution, key product choices, algorithm/framework names, data chain, selection rationale and important results. Shorten procedural narration by naming its central mechanism. Do not cut a multi-part platform to a few generic bullets just to fit a page target. If a material deletion is needed, show its exact scope for approval. Layout tuning does not authorize content deletion or unreadably small type.
+For selection/deletion, identify the accepted long source and the compressed source, then show the complete original and complete proposed project with all omitted/merged passages and the reason for each material cut. Retain the selected project's problem, ownership, consequential product/technical choices and strongest evidenced outcomes. Whole-project omission is a scope decision, not a sentence rewrite. Use the agreed project order and approval contract, including an explicit waiver limited to its stated round. A page target alone does not waive required content review. Preserve both source files and the factual relationships behind retained claims.
 
 ## Propagate feedback and scope
 
@@ -49,4 +43,4 @@ Delete repeated setup, filler and over-detailed examples; retain the pain point,
 
 ## File quality and completion
 
-For Chinese files, read [Chinese document quality](references/chinese-quality.md). Keep the user's accepted workspace, photo/logo sources and version convention. Build a new candidate, render every page, compare its full text to approved content, check discoverability and usability, then request approval of that exact Word file. Export and review PDF separately after Word approval. Report only the actual reviewed state.
+For Chinese files, read [Chinese document quality](references/chinese-quality.md). Keep the user's accepted workspace, photo/logo sources and version convention. Build a new candidate, render every page, compare its full text to approved content, check discoverability and usability, then follow the agreed approval contract for that exact Word file. Preserve the inspected format baseline and report actual paragraph/run differences; unchanged style/image package parts alone do not prove format continuity. Export and review PDF separately after Word approval. Report only the actual reviewed state.
