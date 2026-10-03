@@ -2,7 +2,7 @@
 
 # Resume Authoring
 
-Skill package version: `v0.3.4`. Resume content, Word files and PDF files retain their own approval states.
+Skill package version: `v0.3.5`. Resume content, Word files and PDF files retain their own approval states.
 
 This Skill guides evidence-based resume writing and revision across different candidates. It separates content-module confirmation, editable Word review, PDF acceptance, and versioned delivery. Each run reads only the current candidate's authorized materials in that candidate's private workspace; the package contains no candidate resume or personal template.
 
