@@ -21,6 +21,8 @@ Read [default-format.json](assets/default-format.json) when selecting or auditin
 
 A request to restore or fix formatting refers to the selected format system: paragraph roles, lists and hanging indents, heading hierarchy/colors/rules, spacing, run emphasis, date rows and page furniture. Inspect representative matching sections of the actual accepted source and current file before deciding scope. Address individual reported defects within that broader explicit request; a name/date preflight does not establish template fidelity. The result must reach the actual in-use deliverables, backed up and read back, as well as any review copy. Preserve the selected reference’s category/priority distinctions as separate roles; a generic project-heading style must not flatten different groups into one color and size. Confirm an ambiguous reference with a legible original-section image before editing.
 
+For reported weak or missing Chinese bold, read [Chinese document quality](skills/resume-project-review/references/chinese-quality.md) and verify the visible CJK font weight as well as native bold flags; compare a heading/label with adjacent regular text.
+
 For reported clipping or date alignment, read [Chinese document quality](skills/resume-project-review/references/chinese-quality.md) and run its layout checker before and after repair; inherited styles can override an apparently empty paragraph setting. Keep larger headings clear of fixed body line heights and use a shared effective right edge for date rows.
 
 ## Long resume, compressed resume, and target-length short resume

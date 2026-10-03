@@ -49,3 +49,10 @@ For overall format feedback, inspect the selected accepted template and the curr
 
 
 For a selected format with differentiated priority groups, check category labels plus the actual sizes/colors of one priority and one ordinary project together. Do not pass a restoration that colors every project alike or removes the grouping. Inspect the original PDF to identify its visible hierarchy, then use matching Word properties; reference identity approval is not an application attachment receipt.
+
+
+## Visible Chinese bold
+
+For weak or missing heading/label emphasis, inspect native `w:b` and `w:bCs`, style inheritance, `w:rFonts` East Asian font/theme, and the actual font selected in the render. An existing bold flag or a bold Latin span does not prove a visibly bold Chinese span. Compare the same heading and an approved colon-label with adjacent regular text at readable scale. Preserve the user's selected family, sizes and colors; when feedback requests stronger emphasis, choose an available heavier face in that family and record it privately. Verify the requested face exists and the rendered CJK spans use it rather than silently falling back to another family. If a renderer needs a face-name mapping, validate that mapping separately and retain native viewer review as a distinct check.
+
+Apply native bold to all relevant heading/category/project roles and only the approved label prefix before the colon. Preserve dates, remaining body text and existing keyword emphasis. Do not make the whole bullet bold or insert Markdown stars. Read back both actual deliverables and inspect every page; stronger weight can change wrapping. Keep machine-specific font paths and private examples outside the Skill.

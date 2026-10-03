@@ -123,7 +123,16 @@
   },
   "emphasis": {
     "native_word_bold": true,
-    "selection": "ownership, consequential choices, evidence; avoid whole-paragraph bold"
+    "selection": "ownership, consequential choices, evidence; avoid whole-paragraph bold",
+    "cjk_weight": {
+      "preserve_selected_family": true,
+      "stronger_face": "Select an available face only when required by the selected format or current feedback; record and verify it privately.",
+      "native_bold_flags": [
+        "b",
+        "bCs"
+      ],
+      "label_scope": "Only user-approved prefix through the colon; preserve the remaining bullet and dates."
+    }
   },
   "links": {
     "native_hyperlink": true,
@@ -146,7 +155,9 @@
     "verify_lists_indents_heading_colors_rules_spacing_and_page_furniture": true,
     "read_back_actual_in_use_deliverables": true,
     "verify_priority_and_ordinary_roles_as_pair": true,
-    "preserve_explicit_category_headings": true
+    "preserve_explicit_category_headings": true,
+    "verify_visible_cjk_bold_against_regular_text": true,
+    "verify_rendered_emphasis_face_not_only_bold_flags": true
   },
   "locale_spacing": "Follow the users explicit Chinese-Latin/numeric spacing preference; preserve English phrase spaces.",
   "emphasis_profiles": {
