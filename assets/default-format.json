@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "profile": "default-compact-resume",
   "precedence": [
     "current_explicit_user_requirements",
@@ -30,7 +30,8 @@
         "rule": "auto",
         "multiple": 1.04
       },
-      "space_after_pt": 2
+      "space_after_pt": 2,
+      "color": "1F4E79"
     },
     "english_name": {
       "size_pt": 9.5,
@@ -42,17 +43,25 @@
       "line_spacing": {
         "rule": "auto",
         "multiple": 1.04
-      }
+      },
+      "color": "1F4E79"
     },
     "section_heading": {
       "size_pt": 12,
       "bold": true,
-      "space_before_pt": 8,
+      "space_before_pt": 7,
       "space_after_pt": 3,
       "keep_with_next": true,
       "line_spacing": {
         "rule": "auto",
         "multiple": 1.04
+      },
+      "color": "17365D",
+      "paragraph_bottom_border": {
+        "style": "single",
+        "color": "17365D",
+        "size_eighth_pt": 8,
+        "space_pt": 2
       }
     },
     "institution_company": {
@@ -71,13 +80,14 @@
     "project_heading": {
       "size_pt": 9.5,
       "bold": true,
-      "space_before_pt": 5,
-      "space_after_pt": 2,
+      "space_before_pt": 0.75,
+      "space_after_pt": 1.5,
       "keep_with_next": true,
       "line_spacing": {
         "rule": "auto",
         "multiple": 1.04
-      }
+      },
+      "color": "1F4E79"
     },
     "body": {
       "size_pt": 8.5,
@@ -94,6 +104,21 @@
       "alignment": "right_tab",
       "tab_position": "effective_text_right_edge",
       "trim_trailing_alignment_spaces": true
+    },
+    "body_list": {
+      "size_pt": 8.5,
+      "space_after_pt": 1.5,
+      "line_spacing": {
+        "rule": "auto",
+        "multiple": 1.04
+      },
+      "alignment": "both",
+      "native_numbering": {
+        "format": "bullet",
+        "marker": "•",
+        "left_indent_pt": 11.5,
+        "hanging_indent_pt": 8
+      }
     }
   },
   "emphasis": {
@@ -116,7 +141,10 @@
     "never_align_dates_by_space_padding": true,
     "render_all_pages": true,
     "check_reported_viewer_when_available": true,
-    "do_not_shrink_text_to_meet_page_count": true
+    "do_not_shrink_text_to_meet_page_count": true,
+    "full_template_fidelity_by_semantic_role": true,
+    "verify_lists_indents_heading_colors_rules_spacing_and_page_furniture": true,
+    "read_back_actual_in_use_deliverables": true
   },
   "locale_spacing": "Follow the users explicit Chinese-Latin/numeric spacing preference; preserve English phrase spaces."
 }

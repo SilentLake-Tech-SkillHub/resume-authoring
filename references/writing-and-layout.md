@@ -31,3 +31,10 @@ Compare the actual paragraph and run properties for mapped source/output paragra
 The independent [default format](../assets/default-format.json) defines page geometry, typography roles, spacing, emphasis and date alignment. It is a fallback. Explicit user changes take precedence over the selected user template; unspecified properties come from that template before defaults. For existing files, preserve the selected format and patch the reported property only. Record conflicting sources and effective resolved properties in the caller workspace. An offered template or user page limit does not grant unrelated redesign or smaller type.
 
 Resolve effective paragraph/run properties through style inheritance. A name may inherit a fixed body line height even without `w:line` in its paragraph XML. Use automatic or adequate minimum height for large text, preserving its chosen size. For date rows, use a right-aligned tab at the page text edge adjusted for section margins and paragraph indents; strip trailing alignment padding, preserve the left label and check long labels for overlap/wrapping.
+
+
+## Full format restoration
+
+Distill the selected accepted format by semantic role before editing: font/color/size, line and paragraph spacing, numbering and hanging indent, borders/shading, alignment/tabs, emphasis, image placement and recurring page elements. Map each current-content paragraph to a source role, preserving the approved content and explicit overrides. Reuse the source numbering and role properties rather than flattening project bullets into plain paragraphs. Capture meaningful before/after examples from the same section and inspect every final page. List markers, section rules and heading colors are material source components when the selected template uses them.
+
+A narrow clipping/date checker is only one preflight. Record full-template fidelity evidence separately and verify the exact files in the actual deliverable folder; a corrected candidate does not repair another copy. Keep recovery copies before an authorized in-place format correction.
