@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "profile": "default-compact-resume",
   "precedence": [
     "current_explicit_user_requirements",
@@ -31,7 +31,7 @@
         "multiple": 1.04
       },
       "space_after_pt": 2,
-      "color": "1F4E79"
+      "color": "17365D"
     },
     "english_name": {
       "size_pt": 9.5,
@@ -44,7 +44,7 @@
         "rule": "auto",
         "multiple": 1.04
       },
-      "color": "1F4E79"
+      "color": "174A7E"
     },
     "section_heading": {
       "size_pt": 12,
@@ -87,7 +87,7 @@
         "rule": "auto",
         "multiple": 1.04
       },
-      "color": "1F4E79"
+      "color": "000000"
     },
     "body": {
       "size_pt": 8.5,
@@ -144,7 +144,44 @@
     "do_not_shrink_text_to_meet_page_count": true,
     "full_template_fidelity_by_semantic_role": true,
     "verify_lists_indents_heading_colors_rules_spacing_and_page_furniture": true,
-    "read_back_actual_in_use_deliverables": true
+    "read_back_actual_in_use_deliverables": true,
+    "verify_priority_and_ordinary_roles_as_pair": true,
+    "preserve_explicit_category_headings": true
   },
-  "locale_spacing": "Follow the users explicit Chinese-Latin/numeric spacing preference; preserve English phrase spaces."
+  "locale_spacing": "Follow the users explicit Chinese-Latin/numeric spacing preference; preserve English phrase spaces.",
+  "emphasis_profiles": {
+    "ai_focus": {
+      "activation": "Use only when selected by the current user or present in the selected accepted reference; classify by actual project work.",
+      "roles": {
+        "priority_category": {
+          "size_pt": 11,
+          "bold": true,
+          "color": "174A7E",
+          "space_before_pt": 5,
+          "space_after_pt": 1.75,
+          "keep_with_next": true
+        },
+        "priority_project": {
+          "size_pt": 10,
+          "bold": true,
+          "color": "174A7E",
+          "keep_with_next": true
+        },
+        "ordinary_category": {
+          "size_pt": 9.5,
+          "bold": true,
+          "color": "000000",
+          "space_before_pt": 5,
+          "space_after_pt": 1.75,
+          "keep_with_next": true
+        },
+        "ordinary_project": {
+          "size_pt": 9.5,
+          "bold": true,
+          "color": "000000",
+          "keep_with_next": true
+        }
+      }
+    }
+  }
 }

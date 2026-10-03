@@ -46,3 +46,6 @@ Fix large text by overriding its paragraph with automatic or adequate minimum li
 ## Full template fidelity and real copies
 
 For overall format feedback, inspect the selected accepted template and the current file together. Check the same work/project section for native list markers, hanging indents, section borders, heading colors, paragraph spacing and typography. Compare semantic role properties, not only shared text or an education/header screenshot. Preserve the current approved facts. Name/date checks do not cover the full format system. Before claiming repair, verify that every authorized actual deliverable copy equals the reviewed repair and provide a legible relevant-section result when the user reports a visual defect.
+
+
+For a selected format with differentiated priority groups, check category labels plus the actual sizes/colors of one priority and one ordinary project together. Do not pass a restoration that colors every project alike or removes the grouping. Inspect the original PDF to identify its visible hierarchy, then use matching Word properties; reference identity approval is not an application attachment receipt.

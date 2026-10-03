@@ -38,3 +38,10 @@ Resolve effective paragraph/run properties through style inheritance. A name may
 Distill the selected accepted format by semantic role before editing: font/color/size, line and paragraph spacing, numbering and hanging indent, borders/shading, alignment/tabs, emphasis, image placement and recurring page elements. Map each current-content paragraph to a source role, preserving the approved content and explicit overrides. Reuse the source numbering and role properties rather than flattening project bullets into plain paragraphs. Capture meaningful before/after examples from the same section and inspect every final page. List markers, section rules and heading colors are material source components when the selected template uses them.
 
 A narrow clipping/date checker is only one preflight. Record full-template fidelity evidence separately and verify the exact files in the actual deliverable folder; a corrected candidate does not repair another copy. Keep recovery copies before an authorized in-place format correction.
+
+
+## Category and priority hierarchy
+
+When the selected reference distinguishes priority work through category headings, color and font size, record and reproduce each distinct role. Map both a priority and an ordinary project as a fidelity pair; do not map all project titles to a single generic heading. Preserve category labels as structural headings while retaining the approved project text. For an AI-focused reference, keep AI work separate from ordinary data, operations or research work according to the actual project substance. Apply this focus only when selected for the current person. A later explicit choice of that differentiated hierarchy governs the affected title roles; retain prior body-size and date-alignment requirements.
+
+Before calling restoration complete, inspect the selected original PDF as well as its corresponding Word. A similar filename, a newer version or a passing color check does not identify the intended reference. If its identity is ambiguous, show the actual relevant section for a minimal reference confirmation and keep application/upload identity separate from template selection.
