@@ -17,6 +17,8 @@ Read the person's current approved sources, previous review decisions, correctio
 
 ## Write decisions the interviewer can assess
 
+Before showing any proposed wording, apply [prose style](../../references/prose-style.md) and run `scripts/check_prose_style.py --text <draft>` (or `--docx <candidate>`); fix each reported hit by restating the content directly, not by dropping a fact.
+
 Explain the actual user/business problem, the person's ownership, the product decision and the mechanism that makes it work. Keep technical names when they identify a real choice, rather than replacing them with generic “AI赋能”“提升体验”“设计工作流”. Use the following dimensions where the evidence supports them; do not fabricate missing detail or mechanically force all dimensions into every project:
 
 - **Product scope:** who needs the product, why the existing method fails, how the product solves that problem, and the tradeoff behind its scope.

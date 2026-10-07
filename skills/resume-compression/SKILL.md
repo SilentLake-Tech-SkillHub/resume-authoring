@@ -19,6 +19,8 @@ Default to long approval → compression → selection/deletion when needed. Kee
 
 ## Shorten each project without stripping it
 
+Shortening tempts a writer into clipped fragments, stacked enumeration commas and dashes. Apply [prose style](../../references/prose-style.md) to every compressed sentence and run `../resume-project-review/scripts/check_prose_style.py` on the compressed project before showing it.
+
 1. Map every substantive source sentence to a shorter sentence or a justified combined sentence in a private coverage ledger. Retain the title, dates and actual website as applicable. Record source sentence IDs, full source/proposed wording, keywords, numeric facts with units/baselines/periods, causal relationships, merges and review authority.
 2. Compress shared qualifiers once. Combine parallel counts, scopes and system names using a readable structure; retain the meaning of each count and its corresponding entity. Merge adjacent bullets that describe one mechanism, while preserving data source → processing/model/storage → delivery and the supported outcome.
 3. Remove repeated context, filler, low-value narration and unnecessarily detailed examples. Keep product pain point, ownership, consequential design/technical choices, model/framework/algorithm names, data relationships, choice rationale and material results. Removing these is content selection and belongs in the next stage.
